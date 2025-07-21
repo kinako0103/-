@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  padding: 1em;
+  background: #f4f4f4;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+input,
+select,
+button {
+  margin: 0.3em;
+  padding: 0.5em;
+}

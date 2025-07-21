@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <title>家計簿アプリ</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>家計簿</h1>
+
+  <form id="entryForm">
+    <input type="number" id="amount" placeholder="金額" required />
+    <select id="type">
+      <option value="支出">支出</option>
+      <option value="収入">収入</option>
+    </select>
+    <select id="category">
+      <option value="外食費">外食費</option>
+      <option value="生活用品">生活用品</option>
+      <option value="交際費">交際費</option>
+      <option value="必要経費">必要経費</option>
+      <option value="娯楽費">娯楽費</option>
+      <option value="固定費">固定費</option>
+      <option value="その他">その他</option>
+    </select>
+    <button type="submit">登録</button>
+  </form>
+
+  <h2>今月の合計</h2>
+  <p id="summary">読み込み中...</p>
+
+  <canvas id="summaryChart" width="300" height="300"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
